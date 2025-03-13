@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue 3 Directives</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+    <h2>v-if</h2>
+    <p v-if="showByIf">Hello Vue!</p>
+    <p v-else>Goodbye Vue!</p>
+    <button @click="showByIf = !showByIf">Toggle</button>
+
+    <h2>v-show</h2>
+    <p v-show="showByShow">Hello Vue!</p>
+    <button @click="showByShow = !showByShow">Toggle</button>
+
+
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+	const { createApp, ref } = Vue;
+
+	createApp({
+		setup() {
+			const showByIf = ref(true);
+			const showByShow = ref(true);
+					return {
+                      showByIf,
+                      showByShow,
+			};
+		}
+	}).mount('#app');
+</script>
+
+</body>
+</html>
