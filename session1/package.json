@@ -1,0 +1,28 @@
+{
+  "name": "learn-vue",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "../learn vue/node_modules/.bin/vite",
+    "build": "../learn vue/node_modules/.bin/vite build",
+    "preview": "../learn vue/node_modules/.bin/vite preview",
+    "lint": "../learn vue/node_modules/.bin/eslint . --fix",
+    "format": "../learn vue/node_modules/.bin/prettier --write src/"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.7",
+    "tailwindcss": "^4.0.7",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "eslint": "^9.20.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "prettier": "^3.5.1",
+    "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^7.7.2"
+  }
+}
